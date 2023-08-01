@@ -1,0 +1,521 @@
+/* Reset CSS */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* Styling mobilefirst  */
+
+/* Creating Variables for repeating values  */
+:root {
+  --aqua: rgb(204, 228, 228);
+  --lightcolorbackground: rgb(253, 253, 253);
+  --backgroundNavFooter: dimgray;
+  --bordercolor: #ccc;
+}
+
+/* Adding smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+/* Styling class container (Navbar) and display Flexbox for mobile */
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: var(--backgroundNavFooter);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Styling List */
+.container nav ul li {
+  display: inline;
+  margin-right: 5px;
+  color: var(--aqua);
+  font-size: 15px;
+}
+
+nav ul li a {
+  color: var(--aqua);
+  text-decoration: none;
+}
+
+/* Hover over with underline effect */
+nav ul li a:hover {
+  text-decoration-line: underline;
+  border-bottom: 10px;
+  color: var(--aqua);
+}
+
+/* Adding pointer effect on list links */
+nav ul li:hover {
+  cursor: pointer;
+}
+
+/* Styling About me section for mobile */
+.about_me {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 170px;
+}
+
+/* Styling Article with P tag and H1 tag */
+.about {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+.about h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.about_me img {
+  height: 200px;
+  width: 200px;
+}
+
+/* Styling Project Section for mobile */
+.work {
+  background-color: var(--lightcolorbackground);
+  height: 100%;
+}
+/* On this set of img, using Flex */
+.work-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+/* Styling Img */
+.card-1 img,
+.card-2 img,
+.card-3 img,
+.card-4 img {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* Hover effect on img */
+.card-1 img:hover,
+.card-2 img:hover,
+.card-3 img:hover,
+.card-4 img:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Styling h2 tags */
+.work-img div h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 20px;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+/* Styling certs section */
+.certs {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+}
+.certs .divider {
+  display: none;
+}
+.cert-1,
+.cert-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cert-2 {
+  padding-top: 100px;
+  flex-direction: column-reverse;
+}
+
+.cert-1 h2,
+.cert-2 h2 {
+  padding-bottom: 60px;
+}
+
+.cert-1 img,
+.cert-2 img {
+  height: 150px;
+  width: 200px;
+}
+/* Styling hover over effect on certificates */
+.cert-1 img:hover,
+.cert-2 img:hover {
+  opacity: 0.5;
+}
+
+/* Resume section */
+.resume {
+  height: 100vh;
+  background-color: var(--lightcolorbackground);
+}
+
+.resume h2 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 30px;
+}
+
+/* Back to top button for mobile */
+.back-to-top {
+  display: none;
+}
+
+/* Styling Footer with contact me details for mobile */
+.footer {
+  display: flex;
+  color: var(--aqua);
+  background-color: var(--backgroundNavFooter);
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+}
+
+.footer h3 {
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+.footer ul {
+  padding-top: 25px;
+}
+
+.footer ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Hover effect on contact links */
+.footer a:hover {
+  text-decoration-line: underline;
+  border-bottom: 10px;
+  color: var(--aqua);
+}
+.footer .divider {
+  display: none;
+  background-color: var(--aqua);
+  text-align: center;
+  height: 5%;
+  padding-top: 90px;
+}
+
+.footer a {
+  color: var(--aqua);
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Styling for screens larger than or equal to 768px */
+@media (max-width: 992px) and (min-width: 768px) {
+  /* Styling class container (Navbar) and display Flexbox for larger screens */
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    justify-content: end;
+    padding-right: 10px;
+  }
+
+  /* Styling About me section for larger screens */
+  .about {
+    width: 400px;
+  }
+  .about {
+    border-right: 1px solid var(--bordercolor);
+  }
+  .about_me {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about_me img {
+    padding-top: 60px;
+    width: 180px;
+    height: 240px;
+  }
+
+  /* Styling Project Section for larger screens */
+  .work {
+    padding-top: 80px;
+    height: 100vh;
+  }
+  .work-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 40px;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 300px;
+  }
+  .card-1 h2,
+  .card-2 h2,
+  .card-3 h2,
+  .card-4 h2 {
+    padding-right: 50px;
+  }
+  .certs {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  /* Styling certs section for bigger screen */
+  .cert-1,
+  .cert-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cert-1 .img {
+    border-right: 1px solid var(--bordercolor);
+    padding-right: 50px;
+  }
+  .cert-2 .img {
+    border-left: 1px solid var(--bordercolor);
+    padding-left: 50px;
+  }
+  .cert-1 img,
+  .cert-2 img {
+    height: 250px;
+    width: 350px;
+  }
+
+  .cert-1 h2 {
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+  .cert-2 h2 {
+    padding-top: 30px;
+    padding-right: 50px;
+  }
+
+  /* Resume section */
+  .resume {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* Back to top button for larger screens */
+  .back-to-top {
+    display: block;
+    position: fixed;
+    bottom: 130px;
+    right: 30px;
+    background-color: #4b96e6;
+    color: #fff;
+    padding: 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  /* Styling Footer with contact me details for larger screens */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-right: 200px;
+    height: 100px;
+  }
+
+  .footer h3 {
+    padding-top: 15px;
+    padding-left: 120px;
+    margin: 20px;
+    font-size: 16px;
+  }
+  .footer ul {
+    padding-right: 0;
+    padding-top: 10px;
+    padding-left: 150px;
+  }
+}
+
+/* Styling for screens larger than or equal to 992px */
+@media (min-width: 992px) {
+  /* Styling class container (Navbar) and display Flexbox for larger screens */
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    justify-content: end;
+    padding-right: 10px;
+  }
+  .container nav ul li {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  /* Styling About me section for larger screens */
+  .about {
+    width: 700px;
+    padding-right: 100px;
+  }
+  .about {
+    border-right: 1px solid var(--bordercolor);
+  }
+  .about h1 {
+    text-align: left;
+    font-size: 25px;
+  }
+  .about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .about_me .img {
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 270px;
+    height: 300px;
+  }
+
+  /* Styling Project Section for larger screens */
+  .work {
+    height: 100vh;
+    padding-top: 200px;
+  }
+  .work-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 40px;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 300px;
+  }
+  .card-1 h2,
+  .card-2 h2,
+  .card-3 h2,
+  .card-4 h2 {
+    padding-right: 50px;
+  }
+  .certs {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 30px;
+  }
+
+  .cert-1,
+  .cert-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cert-1 .img {
+    border-right: 1px solid var(--bordercolor);
+    padding-right: 50px;
+  }
+  .cert-2 .img {
+    border-left: 1px solid var(--bordercolor);
+    padding-left: 50px;
+  }
+
+  .cert-1 h2 {
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+  .cert-2 h2 {
+    padding-top: 30px;
+    padding-right: 50px;
+  }
+  .cert-1 img,
+  .cert-2 img {
+    height: 320px;
+    width: 450px;
+  }
+  /* Resume section */
+  .resume {
+    width: 100vw;
+    height: 100vh;
+  }
+  .back-to-top {
+    display: block;
+    position: fixed;
+    bottom: 130px;
+    right: 30px;
+    background-color: #4b96e6;
+    color: #fff;
+    padding: 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  /* Styling Footer with contact me details for larger screens */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    /* padding-right: 200px; */
+    height: 100px;
+    padding: 0;
+  }
+
+  .footer h3 {
+    padding-top: 15px;
+    /* padding-left: 120px; */
+    margin: 20px;
+    font-size: 16px;
+  }
+  .footer ul {
+    padding-right: 0;
+    padding-top: 10px;
+    padding-left: 150px;
+  }
+}
