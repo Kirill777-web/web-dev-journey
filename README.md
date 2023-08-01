@@ -16,6 +16,8 @@ The main purpose of the WebDev Journey website is to showcase my professional po
 
 This is the link of my [GitHub repository](https://github.com/Kirill777-web/web-dev-journey)
 
+The following screenshots show the responsive design of my portfolio website:
+
 ![screenshot Mobile WebDev Journey portfolio WebPage](/assests/images/mobile.png 'screenshot')
 ![screenshot  768- 992  Journey portfolio WebPage](/assests/images/768px_992px.png 'screenshot')
 ![screenshot full screen WebDev Journey portfolio WebPage](/assests/images/full%20screen.png 'screenshot')
