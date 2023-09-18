@@ -86,25 +86,27 @@
     </section>
   </section>
   <!-- Section Certificates -->
-  <section id="certs" class="certs">
-    <div class="cert-1">
-      <figure class="img">
-        <img src="assests/images/AWS Certified Cloud Practitioner certificate.jpg" alt="AWS certificate">
-      </figure>
-      <article class="description">
-        <h2>AWS Certified Cloud Practitioner</h2>
-      </article>
-    </div>
-    <!-- Second Cert -->
-    <div class="cert-2">
-      <article class="description">
-        <h2>Google IT Support</h2>
-      </article>
-      <figure class="img">
-        <img src="assests/images/googleITsupport.jpg" alt="AWS certificate">
-      </figure>
-    </div>
+  <section class="certs" id="certs">
+    <div class="slider-container">
+      <button id="prevBtn" class="arrow-btn">&#10094;</button>
+      <div class="certificates-slider">
+        <div class="certificate"> <img id="img" src="assests/images/AWS Certified Cloud Practitioner certificate.jpg"
+            alt="AWS certificate">
+        </div>
+        <div class="certificate"><img id="img" src="assests/images/googleITsupport.jpg" alt="Google certificate"></div>
+        <div class="certificate"></div>
+        <div class="certificate"></div>
+      </div>
+      <button id="nextBtn" class="arrow-btn">&#10095;</button>
+      <div class="indicators">
+        <!-- ... add as many lines as you have certificates -->
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
 
+      </div>
+    </div>
   </section>
   <!-- Resume section -->
   <section id="resume" class="resume">
@@ -124,6 +126,7 @@
 
   </footer>
 
+  <script src="assests/app.js"></script>
 </body>
 
 </html>
