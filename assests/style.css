@@ -50,7 +50,7 @@ body {
   display: inline;
   margin-right: 5px;
   color: var(--aqua);
-  font-size: 15px;
+  font-size: 13px;
 }
 
 nav ul li a {
@@ -77,14 +77,14 @@ nav ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 170px;
+  padding-bottom: 80px;
 }
 
 /* Styling Article with P tag and H1 tag */
 .about {
   width: 100%;
   padding: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
 }
 .about h1 {
@@ -148,8 +148,8 @@ nav ul li:hover {
 }
 .slider-container {
   position: relative;
-  width: 395px; /* width of a certificate */
-  height: 320px;
+  width: 305px; /* width of a certificate */
+  height: 250px;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* optional shadow for aesthetic */
   padding-bottom: 30px; /* space for the indicators */
@@ -162,8 +162,8 @@ nav ul li:hover {
 
 #img {
   flex: 0 0 auto;
-  width: 370px;
-  height: 280px;
+  width: 280px;
+  height: 250px;
   margin: 10px 13px;
   /* border: 2px solid black; */
 }
